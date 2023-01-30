@@ -278,6 +278,15 @@ module.exports = {
           data: null,
         });
       }
+      // let cekUsername = await users.findAll({
+      //   where: { username },
+      // });
+      // if (cekUsername.length >= 1) {
+      //   res.status(404).send({
+      //     isError: false,
+      //     message: "Username is already exist, please try another username",
+      //   });
+      // }
       await users.update(
         {
           username,
